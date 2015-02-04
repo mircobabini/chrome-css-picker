@@ -1,5 +1,8 @@
 
 (function() {
+	function _urize(uri){
+		return location.protocol+'//'+uri;
+	}
     function e(e, t) {
         var n = document.createElement("script");
         n.src = e;
@@ -17,7 +20,7 @@
     }
 
     if (window.jQuery === undefined) {
-        e("http://code.jquery.com/jquery-latest.min.js", function() {
+        e(_urize('code.jquery.com/jquery-latest.min.js'), function() {
             if (typeof jQuery == "undefined") {
                 console.log("error loading jquery")
             } else {
