@@ -1,0 +1,25 @@
+{
+  "name": "CSS Picker",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Pick css style of any element with ease",
+  "homepage_url": "http://mircobabini.com/project/css-picker",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": ["tabs", "<all_urls>"],
+  "web_accessible_resources": ["test/css/style8.css"],
+   "background": {
+      "scripts": [ "js/analytics.js", "js/jquery.min.js", "js/modernizr.min.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "icons/icon19.png"
+      },
+      "default_title": "CSS Pick"
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}

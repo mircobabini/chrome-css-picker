@@ -1,14 +1,8 @@
-function _message( str ){
-    chrome.extension.sendMessage({
-        action: "getSource",
-        source: str
-    });
-}
-
+console.log('here');
 init();
 function init(){
-    _message('working..');
 
+console.log('here2');
     // csspicker
     jQuery(document).ready(function($) {
 
